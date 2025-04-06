@@ -20,8 +20,10 @@
     }
 
     .section {
-      padding: 60px 20px;
+      padding: 40px 20px;
       text-align: center;
+      position: relative;
+      z-index: 2;
     }
 
     .title {
@@ -34,14 +36,19 @@
     .message {
       font-size: 20px;
       max-width: 800px;
-      margin: 0 auto 40px;
+      margin: 0 auto 20px;
       line-height: 1.6;
     }
 
     .footer {
       font-size: 18px;
-      margin-top: 60px;
+      margin-top: 30px;
       color: #6c4c4c;
+    }
+
+    .bouquet {
+      max-width: 250px;
+      margin: 20px auto;
     }
 
     .petals {
@@ -75,12 +82,17 @@
   </style>
 </head>
 <body>
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_eb25b4d1f2.mp3?filename=birthday-126842.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
   <div class="petals" id="petals"></div>
 
   <div class="section">
     <div class="title">Happy Birthday Natalia Ma'am! 🎉</div>
     <div class="message">
-      On this special day, I want to wish you all the joy, love, and laughter the world can offer. <br /><br />
+      On this special day, I want to wish you all the joy, love, and laughter the world can offer.<br /><br />
       Your kindness and grace reflect in every person around you — especially in your wonderful daughter, who means so much to me. 
       May this year bring you endless reasons to smile, moments to cherish, and dreams fulfilled.
     </div>
@@ -91,6 +103,7 @@
       Thank you for being the beautiful soul behind someone so special to me. You are truly admired and appreciated. 🌸
     </div>
     <div class="footer">With warmest wishes,<br />Vaisakh</div>
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXRpZnk2c2cyOG5vYm1xM2tveXpxMjF3bGZhYnhrbmdlNXA1Ym1nYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N4nWAyzWWghneIaulh/giphy.gif" alt="Bouquet Gif" class="bouquet">
   </div>
 
   <script>
