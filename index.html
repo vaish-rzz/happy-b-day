@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Natalia Ma'am!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to bottom, #fff5f8, #ffe6f0);
+      color: #4b2e2e;
+      overflow-x: hidden;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .title {
+      font-family: 'Great Vibes', cursive;
+      font-size: 48px;
+      color: #d6336c;
+      margin-bottom: 20px;
+    }
+
+    .message {
+      font-size: 20px;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+
+    .footer {
+      font-size: 18px;
+      margin-top: 60px;
+      color: #6c4c4c;
+    }
+
+    .petals {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .petal {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      border-radius: 50%;
+      opacity: 0.7;
+      animation: fall 10s linear infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-100px);
+      }
+      100% {
+        transform: translateY(100vh);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="petals" id="petals"></div>
+
+  <div class="section">
+    <div class="title">Happy Birthday Natalia Ma'am! 🎉</div>
+    <div class="message">
+      On this special day, I want to wish you all the joy, love, and laughter the world can offer. <br /><br />
+      Your kindness and grace reflect in every person around you — especially in your wonderful daughter, who means so much to me. 
+      May this year bring you endless reasons to smile, moments to cherish, and dreams fulfilled.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="message">
+      Thank you for being the beautiful soul behind someone so special to me. You are truly admired and appreciated. 🌸
+    </div>
+    <div class="footer">With warmest wishes,<br />Vaisakh</div>
+  </div>
+
+  <script>
+    const petalsContainer = document.getElementById("petals");
+    for (let i = 0; i < 30; i++) {
+      const petal = document.createElement("div");
+      petal.className = "petal";
+      petal.style.left = Math.random() * 100 + "vw";
+      petal.style.animationDuration = 5 + Math.random() * 5 + "s";
+      petal.style.opacity = Math.random();
+      petalsContainer.appendChild(petal);
+    }
+  </script>
+</body>
+</html>
